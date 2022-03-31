@@ -20,6 +20,7 @@ import com.navercorp.pinpoint.common.server.config.LoggingEvent;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.lang.Nullable;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
@@ -51,8 +52,15 @@ public class BatchConfiguration {
 
     @Value("${batch.flink.server}")
     private String[] flinkServerList = new String[0];
-
-
+    
+    @Value("${batch.sms.server.url}")
+    private String url;
+    
+    @Value("${batch.sms.server.dubbo.port}")
+    private int  port;
+    
+    @Value("${batch.sms.server.address}")
+    private String address;
     @Value("${job.cleanup.inactive.agents:false}")
     private boolean enableCleanupInactiveAgents;
 
@@ -69,8 +77,31 @@ public class BatchConfiguration {
 
     @Value("${job.cleanup.inactive.agents.cron:}")
     private String cleanupInactiveAgentsCron;
-
-
+    
+    public void setUrl( String url) {
+        this.url = url;
+    }
+    
+    public int getPort() {
+        return port;
+    }
+    
+    public String getAddress() {
+        return address;
+    }
+    
+    public void setAddress( String address) {
+        this.address = address;
+    }
+    public void setPort( int port) {
+        this.port = port;
+    }
+    
+    
+    public String getUrl() {
+        return this.url;
+    }
+    
     @PostConstruct
     public void setup() {
         beforeLog();

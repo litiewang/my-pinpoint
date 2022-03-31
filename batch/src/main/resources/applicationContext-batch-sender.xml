@@ -10,6 +10,13 @@
         <constructor-arg ref="javaMailSenderImpl"/>
     </bean>
 
+    <bean id="smsSender" class="com.navercorp.pinpoint.batch.alarm.EmptySmsSender">
+<!--        <property name="address" value="${alarm.sms.server.address:}" />-->
+<!--        <property name="url" value="${alarm.sms.server.url:}" />-->
+<!--        <property name="port" value="${alarm.sms.server.dubbo.port:}" />-->
+        <constructor-arg ref="batchConfiguration"/>
+        <constructor-arg ref="userGroupServiceImpl"/>
+    </bean>
     <bean id="webhookSender" class="com.navercorp.pinpoint.batch.alarm.WebhookSenderFactoryBean">
         <constructor-arg ref="batchConfiguration"/>
         <constructor-arg ref="restTemplate" />

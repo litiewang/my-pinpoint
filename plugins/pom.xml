@@ -34,12 +34,13 @@
         <module>assembly</module>
         <module>common-servlet</module>
         <module>external</module>
-
         <module>httpclient3</module>
         <module>httpclient4</module>
         <module>ning-asynchttpclient</module>
         <module>resttemplate</module>
         <module>gson</module>
+        <module>bizlog</module>
+
         <module>netty</module>
         <module>jackson</module>
         <module>cubrid-jdbc</module>

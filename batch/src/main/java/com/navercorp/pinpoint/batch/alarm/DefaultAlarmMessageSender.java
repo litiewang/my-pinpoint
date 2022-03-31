@@ -37,7 +37,8 @@ public class DefaultAlarmMessageSender implements AlarmMessageSender {
                                      Optional<SmsSender> smsSender) {
         this.mailSender = Objects.requireNonNull(mailSender, "mailSender");
         this.webhookSender = Objects.requireNonNull(webhookSender, "webhookSender");
-        this.smsSender = smsSender.orElseGet(EmptySmsSender::new);
+       // this.smsSender = smsSender.orElseGet(EmptySmsSender::new);
+        this.smsSender = smsSender.get();
     }
 
     @Override

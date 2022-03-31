@@ -110,6 +110,7 @@
         <module>batch</module>
 
         <module>hbase2-module</module>
+<!--        <module>plugins/bizlog</module>-->
 
         <!-- <module>agent-testweb</module> -->
         <!-- <module>plugins-it</module> -->
@@ -145,10 +146,10 @@
         <spring5.version>5.3.13</spring5.version>
         <spring.version>${spring5.version}</spring.version>
         <spring.batch.version>4.3.3</spring.batch.version>
-
+        <mashape.unirest.version>1.4.9</mashape.unirest.version>
         <spring.security.version>5.5.3</spring.security.version>
         <spring.boot.version>2.5.7</spring.boot.version>
-
+        <alibaba.fastjson.version>1.2.51</alibaba.fastjson.version>
         <slf4j.version>1.7.30</slf4j.version>
         <!--        https://www.lunasec.io/docs/blog/log4j-zero-day/#who-is-impacted
                     Fix with message layout for jdk7 compatibility
@@ -275,22 +276,22 @@
                 <artifactId>pinpoint-commons-hbase</artifactId>
                 <version>${project.version}</version>
             </dependency>
-            <dependency>
-                <groupId>com.navercorp.pinpoint</groupId>
-                <artifactId>pinpoint-hbase</artifactId>
-                <type>pom</type>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.navercorp.pinpoint</groupId>
-                <artifactId>pinpoint-hbase-schema</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.navercorp.pinpoint</groupId>
-                <artifactId>pinpoint-hbase-schema-manager</artifactId>
-                <version>${project.version}</version>
-            </dependency>
+<!--            <dependency>-->
+<!--                <groupId>com.navercorp.pinpoint</groupId>-->
+<!--                <artifactId>pinpoint-hbase</artifactId>-->
+<!--                <type>pom</type>-->
+<!--                <version>${project.version}</version>-->
+<!--            </dependency>-->
+<!--            <dependency>-->
+<!--                <groupId>com.navercorp.pinpoint</groupId>-->
+<!--                <artifactId>pinpoint-hbase-schema</artifactId>-->
+<!--                <version>${project.version}</version>-->
+<!--            </dependency>-->
+<!--            <dependency>-->
+<!--                <groupId>com.navercorp.pinpoint</groupId>-->
+<!--                <artifactId>pinpoint-hbase-schema-manager</artifactId>-->
+<!--                <version>${project.version}</version>-->
+<!--            </dependency>-->
             <dependency>
                 <groupId>com.navercorp.pinpoint</groupId>
                 <artifactId>pinpoint-rpc</artifactId>

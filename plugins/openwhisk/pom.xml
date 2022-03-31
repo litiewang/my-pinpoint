@@ -27,12 +27,18 @@
     </properties>
 
     <dependencies>
+<!--        <dependency>-->
+<!--            <groupId>internal.com.apache.openwhisk</groupId>-->
+<!--            <artifactId>openwhisk-common</artifactId>-->
+<!--            <version>1.0.0</version>-->
+<!--            <scope>system</scope>-->
+<!--            <systemPath>${basedir}/libs/internal/com/apache/openwhisk/openwhisk-common/1.0.0/openwhisk-common-1.0.0.jar</systemPath>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>internal.com.apache.openwhisk</groupId>
             <artifactId>openwhisk-common</artifactId>
             <version>1.0.0</version>
-            <scope>system</scope>
-            <systemPath>${basedir}/libs/internal/com/apache/openwhisk/openwhisk-common/1.0.0/openwhisk-common-1.0.0.jar</systemPath>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>com.typesafe.akka</groupId>

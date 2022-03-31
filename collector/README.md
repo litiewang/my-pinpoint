@@ -9,6 +9,8 @@ or
 ```
 cd collector
 ../mvnw install -pl collector -am -Dmaven.test.skip=true -f ../pom.xml
+
+../mvnw install -pl collector -am '-Dmaven.test.skip=true' -f ../pom.xml
 ```
 
 

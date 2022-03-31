@@ -53,7 +53,7 @@ import java.util.concurrent.TimeUnit;
 import static com.navercorp.pinpoint.test.plugin.PluginTestConstants.CHILD_CLASS_PATH_PREFIX;
 
 /**
- * We have referred OrderedThreadPoolExecutor ParentRunner of JUnit.
+ * we have referred orderedthreadpoolexecutor parentrunner of junit.
  *
  * @author Jongho Moon
  * @author Taejin Koo

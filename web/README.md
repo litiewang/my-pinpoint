@@ -11,6 +11,9 @@ or
 ``` 
 cd web
 ../mvnw install -pl web -am -Dbuild.frontend.skip=true -Dmaven.test.skip=true -f ../pom.xml
+
+
+../mvnw install -pl web -am '-Dos.detected.classifier=windows-x86_64' '-Dbuild.frontend.skip=true' '-Dmaven.test.skip=true' -f ../pom.xml
 ```
 
 
