@@ -7,9 +7,9 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
 
     <bean id="batchConfiguration" class="com.navercorp.pinpoint.batch.common.BatchConfiguration"/>
-
+<!--设置每分钟扫描一次-->
     <task:scheduled-tasks scheduler="scheduler">
-        <task:scheduled ref="batchJobLauncher" method="alarmJob" cron="0 0/3 * * * *"/>
+        <task:scheduled ref="batchJobLauncher" method="alarmJob" cron="0 0/1 * * * *"/>
         <task:scheduled ref="batchJobLauncher" method="agentCountJob" cron="0 0 2 * * *"/>
         <task:scheduled ref="batchJobLauncher" method="flinkCheckJob" cron="0 0/10 * * * *"/>
         <task:scheduled ref="batchJobLauncher" method="cleanupInactiveAgentsJob" cron="#{batchConfiguration['cleanupInactiveAgentsCron']}"/>

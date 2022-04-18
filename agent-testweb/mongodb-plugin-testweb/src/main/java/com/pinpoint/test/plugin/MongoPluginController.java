@@ -157,7 +157,6 @@ public class MongoPluginController {
         BsonValue a = new BsonString("stest");
         BsonValue b = new BsonDouble(111);
         BsonValue c = new BsonBoolean(true);
-
         Document doc = new Document()
                 .append("int32", new BsonInt32(12))
                 .append("int64", new BsonInt64(77L))

@@ -17,7 +17,8 @@
         <jdk.version>11</jdk.version>
         <jdk.home>${env.JAVA_11_HOME}</jdk.home>
         <plugin.animal-sniffer.skip>true</plugin.animal-sniffer.skip>
-
+        <maven.compiler.target>11</maven.compiler.target>
+        <maven.compiler.source>11</maven.compiler.source>
         <log4j2.version>${log4j2-jdk8.version}</log4j2.version>
     </properties>
 

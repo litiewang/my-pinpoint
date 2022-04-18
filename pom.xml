@@ -617,8 +617,6 @@
                 <scope>runtime</scope>
                 <optional>true</optional>
             </dependency>
-
-
             <dependency>
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-api</artifactId>
@@ -1291,6 +1289,9 @@
                                 <requireEnvironmentVariable>
                                     <variableName>JAVA_HOME</variableName>
                                 </requireEnvironmentVariable>
+                                <!--                                <requireEnvironmentVariable>-->
+                                <!--                                    <variableName>JAVA_6_HOME</variableName>-->
+                                <!--                                </requireEnvironmentVariable>-->
                                 <requireEnvironmentVariable>
                                     <variableName>JAVA_7_HOME</variableName>
                                 </requireEnvironmentVariable>
