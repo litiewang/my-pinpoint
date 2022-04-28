@@ -15,7 +15,11 @@ export class ComponentDefaultSettingDataService {
             new Period(360),
             new Period(720),
             new Period(1440),
-            new Period(2880)
+            new Period(2880),
+            new Period(10080),
+            new Period(21600),
+            new Period(43200),
+            new Period(86400)
         ],
         [UrlPath.SCATTER_FULL_SCREEN_MODE]: [
             new Period(5, 'Last'),
@@ -42,7 +46,7 @@ export class ComponentDefaultSettingDataService {
             new Period(20),
         ]
     };
-    private maxPeriodTime = 60 * 24 * 2; // 2day
+    private maxPeriodTime = 60 * 24 * 30; // 30day
     private colorByRequest: string[] = [
         'rgba(52, 185, 148, 0.5)',  // #34b994
         'rgba(81, 175, 223, 0.5)',  // #51afdf

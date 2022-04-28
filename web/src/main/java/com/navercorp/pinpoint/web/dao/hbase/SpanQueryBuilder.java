@@ -35,7 +35,6 @@ public class SpanQueryBuilder {
 
         builder.addFilter(SpanFilters.collectorAcceptTimeFilter(spanHint.getCollectorAcceptorTime()));
         builder.addFilter(SpanFilters.responseTimeFilter(spanHint.getResponseTime()));
-
         if (spanHint.getApplicationName() != null) {
             builder.addFilter(SpanFilters.applicationIdFilter(spanHint.getApplicationName()));
         }

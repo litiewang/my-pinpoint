@@ -45,7 +45,6 @@ public class ChangeSetManagerTest {
         ChangeSet changeSet4 = newChangeSet("id4", "value4");
         List<ChangeSet> changeSets = Arrays.asList(changeSet1, changeSet2, changeSet3, changeSet4);
         List<SchemaChangeLog> schemaChangeLogs = newSchemaChangeLogs(changeSet1, changeSet2);
-
         ChangeSetManager changeSetManager = new ChangeSetManager(changeSets);
         List<ChangeSet> executedChangeSets = changeSetManager.getExecutedChangeSets(schemaChangeLogs);
         assertThat(executedChangeSets, contains(changeSet1, changeSet2));

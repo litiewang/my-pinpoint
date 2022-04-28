@@ -40,10 +40,10 @@
     </Appenders>
 
     <Loggers>
-         <Logger name="com.navercorp.pinpoint" level="INFO" additivity="false">
-            <AppenderRef ref="console"/>
-            <AppenderRef ref="rollingFile"/>
-        </Logger>
+         <Logger name="com.navercorp.pinpoint" level="DEBUG" additivity="false">
+             <AppenderRef ref="console"/>
+             <AppenderRef ref="rollingFile"/>
+         </Logger>
 
         <Logger name="com.navercorp.pinpoint.web.filter" level="INFO" additivity="false">
             <AppenderRef ref="console"/>

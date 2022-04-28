@@ -2,7 +2,7 @@ spring:
   main:
     allow-bean-definition-overriding: true
   profiles:
-    active: release
+    active: local
 
 server:
   port: 9999

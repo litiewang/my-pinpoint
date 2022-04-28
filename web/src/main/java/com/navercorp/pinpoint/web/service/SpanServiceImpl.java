@@ -245,8 +245,6 @@ public class SpanServiceImpl implements SpanService {
 
                         AnnotationBo sqlMeta = new AnnotationBo(AnnotationKey.SQL_METADATA.getCode(), sqlMetaDataBo.getSql());
                         annotationBoList.add(sqlMeta);
-
-
                         AnnotationBo sql = new AnnotationBo(AnnotationKey.SQL.getCode(), StringUtils.trim(originalSql));
                         annotationBoList.add(sql);
 

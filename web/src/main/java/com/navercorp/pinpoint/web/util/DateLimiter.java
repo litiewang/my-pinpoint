@@ -33,7 +33,7 @@ public class DateLimiter implements Limiter {
     private final long limitDayMillis;
 
     public DateLimiter() {
-        this(2);
+        this(60);
     }
 
     public DateLimiter(int limitDay) {
